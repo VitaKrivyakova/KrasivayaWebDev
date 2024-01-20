@@ -1,0 +1,88 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  height: 60px;
+  max-height: fit-content;
+  background-color: #8b7e7a;
+  box-shadow: 0 4px 2px -1px rgba(101, 84, 84, 0.9);
+}
+.header__nav {
+  height: 60px;
+  margin: 0 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo__header {
+  max-height: 100%;
+}
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.nav__list-item {
+  color: #faf4f4;
+}
+
+.about {
+  background-image: url(./images/background__hrader.jpg);
+  background-size: 100%;
+  height: fit-content;
+  opacity: 0.9;
+}
+.about__content {
+  margin: 0 10%;
+}
+.about__h1 {
+  text-align: center;
+  margin-top: 2px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 100px;
+  color: rgba(250, 244, 244, 0.7);
+  text-shadow: 2px 3px 0px #756969;
+}
+.about__h2:first-of-type {
+  text-align: start;
+}
+.about__h2 {
+  margin: 0;
+  text-align: end;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: rgba(250, 244, 244, 0.8);
+}
+.about__h3 {
+  text-align: justify;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(250, 244, 244, 0.9);
+}
+.about__aurther {
+  gap: 5%;
+  padding-right: 20%;
+  display: flex;
+  flex-direction: row;
+}
+.about__approach {
+  padding: 5% 0 0 20%;
+  gap: 5%;
+  display: flex;
+  flex-direction: row;
+}
+.about__picture {
+  width: 400px;
+  height: 445px;
+  border-radius: 5%;
+}
+.about__aurther-text {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}

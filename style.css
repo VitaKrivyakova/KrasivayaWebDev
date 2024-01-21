@@ -15,6 +15,18 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+/* гамбургер меню */
+.hamburger-menu {
+  visibility: hidden;
+}
+.menu__btn {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  visibility: hidden;
+}
+/* конец */
 .logo__header {
   max-height: 100%;
 }
@@ -62,16 +74,18 @@ body {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 24px;
-  color: rgba(250, 244, 244, 0.9);
+  color: rgba(250, 244, 244, 1);
+  text-shadow: 2px 3px 2px #756969;
 }
 .about__aurther {
+  max-width: 70%;
   gap: 5%;
-  padding-right: 20%;
   display: flex;
   flex-direction: row;
 }
 .about__approach {
-  padding: 5% 0 0 20%;
+  padding-top: 5%;
+  padding-left: 25%;
   gap: 5%;
   display: flex;
   flex-direction: row;
@@ -85,4 +99,140 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+}
+
+@media screen and (max-width: 425px) {
+  .hamburger-menu {
+    visibility: visible;
+  }
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+
+  .menu__btn {
+    visibility: visible;
+    background-color: rgb(10, 121, 123);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #d5cece;
+    transition-duration: 0.25s;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+
+  .menu__box {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+
+    height: 100%;
+    margin: 0;
+    padding: 10% 10%;
+
+    list-style: none;
+    background-color: #8c6c68;
+    box-shadow: 1px 0px 6px rgba(101, 97, 97, 0.2);
+    opacity: 1;
+    transition-duration: 0.25s;
+    z-index: 4;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #a39d9d;
+    font-family: "SaolDisplay-Regular";
+    font-size: 36px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.25s;
+  }
+  .menu__item:hover {
+    background-color: #cfd8dc;
+  }
+  .header {
+    width: 100vw;
+  }
+  .header__nav {
+    visibility: hidden;
+  }
+  .about {
+    background-color: #756969;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  }
+  .about__h1 {
+    text-align: center;
+    margin-top: 2px;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 3em;
+    color: rgba(250, 244, 244, 0.7);
+    text-shadow: 2px 3px 0px #756969;
+  }
+  .about__aurther {
+    display: block;
+  }
+  .about__picture {
+    width: 60%;
+    height: min-content;
+    margin: 0 auto;
+  }
+  .about__aurther-text {
+  }
+  .about__h2 {
+    font-size: 100%;
+  }
+  .about__h3 {
+    font-size: 100%;
+    text-align: justify;
+  }
 }

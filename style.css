@@ -48,13 +48,15 @@ body {
   background-size: 100%;
   height: fit-content;
   opacity: 0.9;
+  background-repeat: no-repeat;
 }
 .about__content {
   margin: 0 10%;
+  padding-bottom: 5%;
 }
 .about__h1 {
   text-align: center;
-  margin-top: 2px;
+  margin: 0 0 30px 0;
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 100px;
@@ -107,7 +109,7 @@ body {
   align-items: stretch;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 660px) {
   .hamburger-menu {
     visibility: visible;
   }
@@ -236,8 +238,6 @@ body {
     height: max-content;
     border-radius: 5px;
   }
-  .about__aurther-text {
-  }
   .about__h2 {
     padding-top: 5%;
     font-size: 2em;
@@ -247,19 +247,30 @@ body {
     width: 100%;
   }
 }
-@media screen and (min-width: 425px) and (max-width: 768px) {
+@media screen and (min-width: 660px) and (max-width: 817px) {
+  .header {
+    width: 100vw;
+  }
+  .about {
+    background-color: #756969;
+    width: 100vw;
+    height: fit-content;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+  }
+
   .about__h1 {
     font-size: 3.5em;
-  }
-  .about__h2 {
+    margin-bottom: 10%;
   }
   .about__h3 {
-    font-size: 1.3em;
+    font-size: 100%;
   }
   .about__picture {
     width: max-content;
     float: left;
     margin-right: 20px;
+    max-height: 100%;
   }
   .about__aurther {
     display: inline;
@@ -267,9 +278,62 @@ body {
   }
   .about__aurther-text {
     display: inline;
+    max-width: 100%;
+  }
+  .about__approach-text {
+    display: inline;
+    max-width: 100%;
   }
   .about__approach {
-    padding: 0;
-    display: inline;
+    max-width: 100%;
+    padding: 30px 0;
+  }
+}
+@media screen and (min-width: 818px) and (max-width: 1024px) {
+  .about {
+    background-color: #756969;
+    width: 100vw;
+    height: fit-content;
+    background-repeat: no-repeat;
+  }
+  .about__h3 {
+    font-size: 100%;
+  }
+  .about__picture {
+    width: max-content;
+    margin-right: 20px;
+    max-height: 100%;
+  }
+  .about__aurther {
+    display: flex;
+    max-width: 100%;
+  }
+  .about__aurther-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .about__approach {
+    padding-left: 0;
+    display: flex;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1882px) {
+  .about {
+    background-color: #756969;
+    width: 100vw;
+    height: fit-content;
+    background-repeat: no-repeat;
+  }
+  .about__aurther {
+    max-width: 100%;
+  }
+  .about__approach {
+    max-width: 100%;
+    padding: 30px 0;
+  }
+  .about__h3 {
+    font-size: 1.3em;
   }
 }

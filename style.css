@@ -116,7 +116,6 @@ body {
   #menu__toggle {
     opacity: 0;
   }
-
   #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
   }
@@ -132,7 +131,6 @@ body {
     visibility: visible;
     left: 0;
   }
-
   .menu__btn {
     visibility: visible;
     background-color: rgb(10, 121, 123);
@@ -146,7 +144,6 @@ body {
     cursor: pointer;
     z-index: 5;
   }
-
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
@@ -165,7 +162,6 @@ body {
     content: "";
     top: 8px;
   }
-
   .menu__box {
     display: flex;
     justify-content: space-around;
@@ -173,11 +169,9 @@ body {
     visibility: hidden;
     top: 0;
     left: -100%;
-
     height: 100%;
     margin: 0;
     padding: 10% 10%;
-
     list-style: none;
     background-color: #8c6c68;
     box-shadow: 1px 0px 6px rgba(101, 97, 97, 0.2);
@@ -319,7 +313,7 @@ body {
     max-width: 100%;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1882px) {
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
   .about {
     background-color: #756969;
     width: 100vw;
@@ -335,5 +329,13 @@ body {
   }
   .about__h3 {
     font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .about {
+    background-color: #756969;
+    width: 100vw;
+    height: fit-content;
+    background-repeat: no-repeat;
   }
 }

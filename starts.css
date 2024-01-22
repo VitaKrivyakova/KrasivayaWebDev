@@ -1,0 +1,79 @@
+.review {
+  background-color: #756969;
+  border: 2px solid red;
+}
+.review__content {
+  margin: 5% 5%;
+  border: 2px solid red;
+}
+.review__cards {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid red;
+  display: grid;
+  margin: 5% auto;
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  column-gap: 17px;
+  row-gap: 20px;
+  justify-items: center;
+  max-width: 400px;
+}
+.review__header {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 3%;
+}
+.review__name {
+  margin: 0;
+  height: fit-content;
+  width: fit-content;
+  text-align: start;
+}
+.review__text {
+  margin: 10px;
+  overflow: hidden;
+}
+
+.review__profile {
+  max-width: 20%;
+  max-height: 20%;
+}
+.rating-area {
+  overflow: hidden;
+  width: 265px;
+  /* margin: 3% auto; */
+}
+.rating-area:not(:checked) > input {
+  display: none;
+}
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 42px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 32px;
+  color: rgb(114, 111, 111);
+  text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+  content: "★";
+}
+.rating-area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+  position: relative;
+}

@@ -4,6 +4,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .header {
+  width: 100vw;
   height: 60px;
   max-height: fit-content;
   background-color: #8b7e7a;

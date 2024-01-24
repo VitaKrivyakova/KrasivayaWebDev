@@ -1,0 +1,111 @@
+.container-galery {
+  overflow: hidden;
+  width: 100%;
+  background-color: #ffffff;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.block-images {
+  background-color: #ffffff;
+  display: grid;
+  max-height: 660px;
+  box-sizing: inherit;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 5fr);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.image1 {
+  grid-area: 1/1/6/5;
+  background-image: url(../assets/images/relax5.png);
+}
+
+.image2 {
+  grid-area: 6/1/11/5;
+  background-image: url(../assets/images/relax1.png);
+}
+
+.image3 {
+  grid-area: 1/5/11/7;
+  background-image: url(../assets/images/relax4.png);
+}
+
+.image4 {
+  grid-area: 1/7/7/11;
+  background-image: url(../assets/images/relax3.png);
+}
+
+.image5 {
+  grid-area: 7/7/11/11;
+  background-image: url(../assets/images/relax2.png);
+}
+
+.image6 {
+  grid-area: 1/11/11/13;
+  background-image: url(../assets/images/relax4.png);
+}
+
+.checklist {
+  background-image: url(../assets/images/background-cheklist.png);
+  padding: 57px;
+  text-align: center;
+}
+
+.checklist-text {
+  margin-bottom: 50px;
+}
+
+.checklist-button {
+  background-color: #ffd18a;
+  color: #8b8082;
+  border-radius: 59px;
+  padding-top: 12px;
+  padding-right: 50px;
+  padding-bottom: 12px;
+  padding-left: 50px;
+  margin-top: 50px;
+}
+
+.footer {
+  background-color: #bcb1b3;
+  color: #f4f2ef;
+  min-width: 300px;
+  padding: 10px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-created {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #000000;
+}

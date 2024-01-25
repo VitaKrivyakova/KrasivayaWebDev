@@ -1,8 +1,7 @@
 .review {
   width: 100vw;
-  padding: 0;
   background-color: #756969;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 .review__content {
   margin: 5% 5%;
@@ -75,6 +74,7 @@
   position: relative;
 }
 @media screen and (max-width: 660px) {
-  .review {
+  .review__content {
+    margin: 0;
   }
 }

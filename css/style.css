@@ -45,7 +45,7 @@ body {
 }
 
 .about {
-  background-image: url(./images/background__hrader.jpg);
+  background-image: url(../images/header-background-image.png);
   background-size: 100%;
   height: fit-content;
   opacity: 0.9;
